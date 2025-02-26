@@ -12,21 +12,33 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
+          
           drawer: Drawer(
             child: ListView(
               children: [
+                DrawerHeader(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(Icons.logo_dev_outlined),
+                      TextButton.icon(
+                        onPressed: (){},
+                        label: Text("Close"),)
+                    ],
+                  ),
+                ),
                 ListTile(
                   leading: Icon(Icons.access_alarm_outlined),
                   title: Text("Recent"),
                   onTap: () {},
-                )
+                ),
                 ListTile(
                   leading: Icon(Icons.abc_sharp),
                   title: Text("Images"),
                   onTap: () {},
-                )
+                ),
                 ListTile(
-                  leading: Icon(Icons.access_alarm_outlined),
+                  leading: Icon(Icons.baby_changing_station),
                   title: Text("Video"),
                   onTap: () {},
                 )
