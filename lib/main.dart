@@ -12,7 +12,16 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-          
+          bottomNavigationBar: BottomNavigationBar(
+            items: [
+              BottomNavigationBarItem(
+                icon: Icon(Icons.home),
+                label: "Home",),
+                BottomNavigationBarItem(
+                icon: Icon(Icons.settings),
+                label: "Settings",),
+            ],
+          ),
           drawer: Drawer(
             child: ListView(
               children: [
